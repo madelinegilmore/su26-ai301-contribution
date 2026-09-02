@@ -1,15 +1,15 @@
-# Contribution [#]: [Issue Title]
+# Contribution [1]: [Issue Title]
 
 **Contribution Number:** [1 / 2 / 3]  
-**Student:** [Your Name]  
-**Issue:** [GitHub issue link]  
-**Status:** [Phase I / Phase II / Phase III / Phase IV] [In Progress / Complete]
+**Student:** [Madeline Gilmore]  
+**Issue:** https://github.com/tarunjandra/agent-tools-mcp-hub/issues/101
+**Status:** Phase I / **Phase II** / Phase III / Phase IV] [In Progress / Complete]
 
 ---
 
 ## Why I Chose This Issue
 
-[1-2 paragraphs explaining why this issue interests you, how it matches your skills/learning goals, what you hope to learn]
+I chose this problem because I don't know much about crypto and I think I would learn something about it through this. I also think the fear index is interesting in itself so I'd like to work on this issue to use this tool.
 
 ---
 
@@ -17,7 +17,7 @@
 
 ### Problem Description
 
-[In your own words, what's broken or missing?]
+A user wants to integrate the crypto fear index AI tool into the application.
 
 ### Expected Behavior
 
