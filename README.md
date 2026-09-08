@@ -1,6 +1,6 @@
 # Contribution [1]: [Issue Title]
 
-**Contribution Number:** [1 / 2 / 3]  
+**Contribution Number:** [1]  
 **Student:** [Madeline Gilmore]  
 **Issue:** https://github.com/tarunjandra/agent-tools-mcp-hub/issues/101
 **Status:** Phase I / **Phase II** / Phase III / Phase IV] [In Progress / Complete]
@@ -8,8 +8,7 @@
 ---
 
 ## Why I Chose This Issue
-
-I chose this problem because I don't know much about crypto and I think I would learn something about it through this. I also think the fear index is interesting in itself so I'd like to work on this issue to use this tool.
+I chose this problem because I never thought about where the clipboard data lives. I'm hoping to learn how that works through this project
 
 ---
 
@@ -17,17 +16,20 @@ I chose this problem because I don't know much about crypto and I think I would 
 
 ### Problem Description
 
-A user wants to integrate the crypto fear index AI tool into the application.
+A user wants to allow copy/paste photos from the timeline.
 
 ### Expected Behavior
 
 [What should happen?]
+
+When you click on the three dots when a photo is selected, copy should be an option on the menu. When clicked it should copy the photo to clipboard
 
 ### Current Behavior
 
 [What actually happens?]
 
 ### Affected Components
+When you click on the three dots when a photo is selected, copy is not an option on the menu
 
 [Which parts of the codebase are involved?]
 
@@ -39,11 +41,15 @@ A user wants to integrate the crypto fear index AI tool into the application.
 
 [Notes on setting up your local development environment - challenges you faced, how you solved them]
 
+Download software, open on local.
+Couldn't figure out how to add photo into environment. 
+
 ### Steps to Reproduce
 
-1. [Step 1]
-2. [Step 2]
-3. [Observed result]
+1. Open libre photos
+2. Load in photo
+3. Press 3 dots
+4. [Observed result]: no copy button
 
 ### Reproduction Evidence
 
@@ -59,22 +65,29 @@ A user wants to integrate the crypto fear index AI tool into the application.
 
 [Your analysis of the root cause - what's causing the issue?]
 
+No copy button was implemented into the menu options
+
 ### Proposed Solution
 
 [High-level description of your fix approach]
+Make a new button using preexisting clipboard copy logic present in other parts of codebase.
+
 
 ### Implementation Plan
 
 Using UMPIRE framework (adapted):
 
 **Understand:** [Restate the problem]
+When you click on the three dots when a photo is selected, copy is not an option on the menu
 
 **Match:** [What similar patterns/solutions exist in the codebase?]
+There is copy/paste logic in other parts of the codebase
+There are other menu options that we can duplicate 
 
 **Plan:** [Step-by-step implementation plan]
-1. [Modify file X to do Y]
-2. [Add function Z]
-3. [Update tests]
+1. Find actions (download, favorite, delete, etc.)
+3. Add copy action > add copy button and make it copy the photo
+4. [Update tests]
 
 **Implement:** [Link to your branch/commits as you work]
 
